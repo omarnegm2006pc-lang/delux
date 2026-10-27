@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NEGM</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <div class="nav_bar" >
+            <div class="user_profile">
+                    <span class="material-symbols-outlined" translate="no">account_circle</span>
+                    <button class="profile_button"><span class="material-symbols-outlined">keyboard_arrow_down</span></button>
+            </div>
+            <form>
+                <div class="search_bar">
+                    <span class="material-symbols-outlined" translate="no">search</span>
+                    <input class="text_search" type="text" placeholder="search">
+                </div>
+            </form>
+            <div class="negm_icon">
+                <button class="negm_list_button">NEGM</button>
+                <div class="negm_content"> 
+                    <a href="index.html">HOME</a>
+                    <a href="">MATERIAL</a>
+                </div>
+            </div>
+        </div>
+        <div class="back-to-home">
+            <a href="index.html"><button class="backtohomebutton" href="index.html"><span class="material-symbols-outlined" translate="no">arrow_back_ios</span></button></a>
+            <div class="back">BACK TO THE LAST PAGE</div>
+        </div>
+        <div class="subject-name">
+            <h2>PHY 101</h2>
+        </div>
+        <div class="subjects">
+            <div class="week1-course">
+                <div class="week1">
+                <button class="week-content-button" onclick="displayweekpage()"><span class="material-symbols-outlined">keyboard_arrow_down</span></button>
+                <h3>WEEK (1)</h3>
+                </div>
+                <div class="the-week-content" id="weekcontent">
+                </div>
+            </div>
+            <div class="week2-course">
+                <div class="week2">
+                <button class="week-content-button" onclick=""><span class="material-symbols-outlined">keyboard_arrow_down</span></button>
+                <h3>WEEK (2)</h3>
+                </div>
+            </div>
+
+            <div class="week3-course">
+                <div class="week3">
+                    <button class="week-content-button" onclick=""><span class="material-symbols-outlined">keyboard_arrow_down</span></button>
+                   <h3>WEEK (3)</h3>
+                </div>
+            </div>
+        </div>
+     </div>
+        <script src="style/learn.js"></script>
+    </body>
+</html>
