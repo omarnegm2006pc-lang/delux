@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NEGM</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        
+        <div class="nav_bar" >
+            <div class="user_profile">
+                    <span class="material-symbols-outlined" translate="no">account_circle</span>
+                    <button class="profile_button"><span class="material-symbols-outlined">keyboard_arrow_down</span></button>
+            </div>
+            <form>
+                <div class="search_bar">
+                    <span class="material-symbols-outlined" translate="no">search</span>
+                    <input class="text_search" type="text" placeholder="search">
+                </div>
+            </form>
+            <div class="negm_icon">
+                <button class="negm_list_button">NEGM</button>
+                <div class="negm_content"> 
+                    <a href="#home">HOME</a>
+                    <a href="">MATERIAL</a>
+                </div>
+            </div>
+        </div>
+        <div class="slogan" id="home">
+            <h1>YOUR WAY TO SHINE</h1>
+            <P class="subtitle">ALL YOUR STUDING NEEDS IN ONE PLACE</P>
+        </div>
+        <h2 class="levels-title">CHOOSE YOUR LEVEL</h2>
+        <div class="levels-select">
+            <div class="first-level">
+                <button class="first-level-button"  onclick="displayfirstlevel()">FIRST LEVEL</button>
+            </div>
+            <div class="second-level">
+                <button class="second-level-button"  onclick="displaysecondlevel()">SECOND LEVEL</button>
+            </div>
+            <div class="third-level">
+                <button class="third-level-button"onclick="displaythirdlevel()" >THIRD LEVEL</button>
+            </div>
+            <div class="fourth-level">
+                <button class="fourth-level-button" onclick="displayfourthlevel()">FOURTH LEVEL</button>
+            </div>
+            <div class="fifth-level">
+                <button class="fifth-level-button" onclick="displayfifthlevel()">FIFTH LEVEL</button>
+            </div>
+        </div>
+
+        <div id="the-subjects">
+        </div>
+        <script src="style/learn.js"></script>
+    </body>
+</html>
