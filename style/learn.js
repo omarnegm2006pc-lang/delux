@@ -1,7 +1,7 @@
 const firstlevel=`<h2 class="levels-title">CHOOSE YOUR SUBJECT</h2>
         <div class="first-level-subjects" id="firstlevel">
-            <div class="phy101">
-                <button class="subject-button">PHY 101</button>
+            <div class="phy101" >
+                <a href= "phy101.html"><button class="subject-button">PHY 101</button></a>
             </div>
             <div class="math101">
                 <button class="subject-button">MATH 101</button>
@@ -264,6 +264,7 @@ let secondclicked = false;
 let thirdclicked = false;
 let fourthclicked = false;
 let fifthclicked = false;
+
 function displayfirstlevel()
 {
     let subject=document.getElementById("the-subjects");
@@ -349,4 +350,47 @@ function displayfifthlevel()
         fourthclicked = false;
         fifthclicked = true;
     }
+}
+const sd=`                <div class="the-week-content">
+                    <div class="lec-pdf">
+                        <button class="download-button"><span class="material-symbols-outlined">download</span></button>
+                        <a href="pdfs/3. Electric Flux and Gauss Law MH.pdf" target="_blank">Lecture 1 - PDF</a>
+                    </div>
+                    <div class="sec-pdf">
+                        <button class="download-button"><span class="material-symbols-outlined">download</span></button>
+                        <a href="pdfs/Sheet_2_Model_Answer (1).pdf" target="_blank">SEC 1 - PDF</a>
+                    </div>
+                    <div class="video">
+                        <h4>Lecture 1</h4>
+                        <div class="video-container">
+                            <a href="https://youtu.be/Tq6zNTPtYDo" target="_blank" rel="noopener noreferrer" class="video-link"><img src="https://img.youtube.com/vi/Tq6zNTPtYDo/hqdefault.jpg"alt="Lecture 1"><p>▶ Watch Lecture 1</p></a>
+                         </div>
+                     </div>
+                 </div>`;
+
+let weekpageclicked=false;
+function displayweekpage()
+{
+    if(weekpageclicked===false)
+    {
+        let addspace=document.getElementById("weekcontent");
+        console.log(addspace);
+        addspace.innerHTML="";
+        addspace.innerHTML =sd;
+        weekpageclicked=true;
+        let element = document.querySelector(".week1 .material-symbols-outlined");
+        element.innerHTML=`keyboard_arrow_up`;
+        let func = document.querySelector(".week1 .week-content-button");
+        func.onclick= removeweekpage;
+    }
+}
+function removeweekpage()
+{
+    let addspace=document.getElementById("weekcontent");
+    addspace.innerHTML="";
+    weekpageclicked=false;
+    let element = document.querySelector(".week1 .material-symbols-outlined");
+    element.innerHTML=`keyboard_arrow_down`;
+    let func = document.querySelector(".week1 .week-content-button");
+    func.onclick= displayweekpage;
 }
