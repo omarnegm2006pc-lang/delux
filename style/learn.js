@@ -1,3 +1,9 @@
+const glow = document.querySelector(".cursor-glow");
+
+document.addEventListener("mousemove", function(event) {
+    glow.style.left = event.clientX + "px";
+    glow.style.top = event.clientY + "px";
+});
 const firstlevel=`<h2 class="levels-title">CHOOSE YOUR SUBJECT</h2>
         <div class="first-level-subjects" id="firstlevel">
             <div class="phy101" >
